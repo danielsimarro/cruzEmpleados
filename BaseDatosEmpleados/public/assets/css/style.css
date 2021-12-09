@@ -1,0 +1,102 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,600&display=swap');
+/*RESET CSS, para resetear todos los parametros*/
+@import url(reset.css);
+
+/*Ponemos tanto la altura como la anchura al 100% para que no hata problemas */
+ html, body {
+     width: 100%;
+     height: 100%;
+     font-family: 'Montserrat', sans-serif;
+     font-weight:normal;
+     color:black;
+     
+     scroll-behavior: smooth; /*Sirve para suavizar el scroll*/
+ }
+
+/*Intentamos hacer las imagenes lo mas responsive posibles*/
+img{
+    max-width: 100%;
+    height: auto; /*Coje el alto nativo de la foto*/
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+
+.content{
+    margin-top:50px;
+    border-top:0px;
+    
+}
+
+
+
+
+ nav{
+     margin-left:50px;
+     
+    height: 95px;
+    width: 80%;
+    position: fixed;
+    z-index: 100; 
+
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex; /* convertimos en un contenedor flex*/
+    justify-content:space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0 3%;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+   text-transform: uppercase;
+   color: #818181;
+   font-size: 1.8em; /*32px/16px=2em*/
+   
+}
+
+nav ul li a:hover{
+  color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
